@@ -1,0 +1,287 @@
+/*----------------------------------------------------------
+Seção HEADER - Topo do Site 
+----------------------------------------------------------*/
+header{
+	border-bottom: 1px solid #E0E0E0; 
+	height:150px;
+	width:100%; 
+}
+/*
+=========================
+logotipo
+=========================
+*/
+	header h1 a{
+		background:url(imagens/Capas-Facebook-do-Flamengo.png) no-repeat; 
+		display:block; 
+		float:left; 
+		height:139px; 
+		text-indent:-9999; 
+		width:58.333333333333%; 
+	}
+/*
+=========================
+nav - menu de navegação
+=========================
+*/
+video {
+	width: 50%;
+	margin-top: 5%;
+	
+}
+
+#video2 {
+width: 100%;
+display:flex;
+justify-content:center;
+}
+
+
+#audio{
+	width: 100%;
+	margin-top: 5%;
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#tamanho{
+width: 50%;
+}
+
+
+.cor { color: rgb(255, 255, 255);
+	margin-top: 15%;
+}
+
+
+.titulo {
+	color: #a80000 !important;
+}
+
+
+#tabelacor {
+	color: #ffffff;
+
+}
+
+#tabelacor2 {
+	width: 100%;
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10%;
+}
+
+
+.campeao {
+	color:#000000 !important;
+}
+
+
+body {
+	background: url(imagens/capafundo.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+nav{
+	float:right;
+	margin-top:78px; 
+	text-align:right; 
+	width:41.6666666666667%; 
+}
+	nav ul{
+		list-style-type:none; 
+	}
+		nav li {
+			display: inline; 
+		}
+			nav ul li a{
+				margin-right: 2.5%; 
+			}
+				nav ul li:nth-child(5) a{
+					margin-right:0; 
+				}
+			nav a:link, nav a:visited{
+				color:rgb(32, 32, 32);
+				font-size: 1.2222222222em; 
+				font-weight: 300;
+				letter-spacing: -0.0909090909em; 
+				line-height: 1.18181818182em; 
+				display:inline-block;
+			}
+			nav a.ativo:link, nav a:hover{
+				color:#FE9380; 
+			}
+/*----------------------------------------------------------
+Seção .CHAMADA 
+----------------------------------------------------------*/
+.chamada{
+	height:140px;
+	text-align:center;
+	width:100%; 
+	color: #000000;
+	
+}
+	h2 span{
+		font-size: 1em; 
+		font-weight: 300;
+		letter-spacing: -0.0333333333em; 
+		line-height: 1em; 
+		color: #a80000;
+
+	}
+	.chamada  {
+		margin: 0 auto;
+		width:75%; 
+		color: #a80000;
+		
+	}
+/*----------------------------------------------------------
+Seção .CONTAINER - Conteúdo com 3 colunas 
+----------------------------------------------------------*/
+.container{
+	opacity: 0.8;
+	background-color:#ffffff;
+	height: 437px;
+	padding:2.5%; 
+	width:95%; 
+
+}
+/*Por causa do padding, a largura, width, do .container passou de 1.200px para 1.140px (95%)*/
+.desktop, .tablet, .mobile{
+	float:left;
+	position:relative;
+	text-align:center;
+	width:31.57894736842105%; 
+}
+.desktop, .tablet{
+	margin-right: 2.631578947368421%; 
+}
+.mobile{
+	background-color:#8B0000;
+	margin-right:0px;
+}
+.desktop{
+	background-color:#2E8B57;
+}
+.tablet{
+	background-color:#FFA500;
+}
+/*
+=========================
+figure - imagens
+=========================
+*/
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+.container figure{
+	margin: 15px auto 0px auto; 
+	width:69.44444444444444%; 
+}
+/*
+=========================
+formatação do texto
+=========================
+*/
+.container h3{
+	color:#fff;
+	font-size: 1.77777777778em; 
+	font-weight: 300;
+	letter-spacing: -0.0625em; 
+	margin-bottom: 30px;
+	text-shadow:none;
+}
+.container p{
+	background-color:#fff;
+	float:left;
+	height:180px;
+	padding: 1.9444444444444445%; 
+	position:absolute;
+	max-width:100%; 
+	text-align:justify;
+	top:225px;
+}
+/*
+=========================
+formatação do botão
+=========================
+*/
+span.btn{
+	font-size: 1.1111111111em; 
+	font-weight: 400;
+	letter-spacing: -0.1em; 
+	height:27px;
+	margin-top: 30px;
+	position:absolute;
+	right: 1px;
+	text-align:center;
+	text-shadow:none;
+	width:33.33333333333333%; 
+}
+span.btn a{
+	color:#fff;
+	padding: 2px 3.333333333333333%; 
+}
+.desktop span.btn a{
+	background-color:#2E8B57;
+}
+.tablet span.btn a{
+	background-color:#FFA500;
+}
+.mobile span.btn a{
+	background-color:#8B0000;
+}
+/*----------------------------------------------------------
+Seção FOOTER - Rodape com 2 colunas 
+----------------------------------------------------------*/
+footer{
+	clear:both;
+	height: 50px;
+	padding: 10px 0;
+	width:100%; 
+}
+.copyright{
+	float:left;
+	margin-left: 2.5%; 
+	color: rgb(255, 254, 254);
+}
+
+.copyrightt {
+	color: #fcfcfc;
+}
+
+.desenvolvedor{
+	float:right;
+}
+.desenvolvedor figure{
+	width:100%;	
+}
+@media (max-width:1025px ) {
+.container p{
+	font-size: 12px ;
+}
+@media (max-width: 700px){
+	.container p{
+		font-size: 10.7px;
+	}
+}
+}
+
+
+	.preto{
+	background-color: rgb(0, 0, 0);
+}
+    .amarelo{
+        background-color: rgb(255, 0, 0);
+    }
+    .azul{
+        background-color: rgb(153, 153, 153);
+    }
